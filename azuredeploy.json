@@ -1,13 +1,13 @@
 {
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
-  "parameters": {
-    "companyTla": {
-      "type": "string",
-      "metadata": {
-        "description": "This is a Three Letter Acronym for your company name. 'CON' for Contoso for example."
-      }
-    },
+"parameters": {
+  "companyTla": {
+    "type": "string",
+    "metadata": {
+      "description": "This is a Three Letter Acronym for your company name. 'CON' for Contoso for example."
+    }
+  },
   "sparkVersion": {
     "type": "string",
     "defaultValue": "3.4",
@@ -15,11 +15,11 @@
       "3.2",
       "3.3",
       "3.4"
-  ],
-  "metadata": {
-    "description": "Specify Spark version for the Spark pool."
-  }
-},
+    ],
+    "metadata": {
+      "description": "Specify Spark version for the Spark pool."
+    }
+  },
 
     "allowAllConnections": {
       "type": "string",
@@ -433,16 +433,8 @@
         },
         "sqlAdministratorLogin": "[parameters('sqlAdministratorLogin')]",
         "sqlAdministratorLoginPassword": "[parameters('sqlAdministratorLoginPassword')]",
-        "managedVirtualNetwork": "default",
-        "workspaceRepositoryConfiguration": {
-          "type": "WorkspaceGitHubConfiguration",
-          "hostName": "https://github.com",
-          "accountName": "[parameters('githubUsername')]",
-          "repositoryName": "Test-Drive-Azure-Synapse-with-a-1-click-POC",
-          "rootFolder": "/synapsepoc",
-          "collaborationBranch": "main"
-        }
-      },
+        "managedVirtualNetwork": "default"
+      }
       "resources": [
         {
           "condition": "[equals(parameters('allowAllConnections'),'true')]",
