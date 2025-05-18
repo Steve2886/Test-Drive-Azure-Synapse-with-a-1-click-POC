@@ -8,6 +8,19 @@
         "description": "This is a Three Letter Acronym for your company name. 'CON' for Contoso for example."
       }
     },
+  "sparkVersion": {
+    "type": "string",
+    "defaultValue": "3.4",
+    "allowedValues": [
+      "3.2",
+      "3.3",
+      "3.4"
+  ],
+  "metadata": {
+    "description": "Specify Spark version for the Spark pool."
+  }
+}
+
     "allowAllConnections": {
       "type": "string",
       "allowedValues": [
@@ -521,7 +534,8 @@
           "enabled": true,
           "delayInMinutes": 15
         },
-        "sparkVersion": "3.4"
+        "sparkVersion": "[parameters('sparkVersion')]"
+
       }
     },
     {
