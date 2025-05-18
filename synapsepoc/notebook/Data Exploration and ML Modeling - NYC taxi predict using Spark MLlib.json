@@ -40,7 +40,7 @@
 					"type": "AAD",
 					"authResource": "https://dev.azuresynapse.net"
 				},
-				"sparkVersion": "2.4",
+				"sparkVersion": "3.4",
 				"nodeCount": 5,
 				"cores": 8,
 				"memory": 56,
