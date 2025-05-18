@@ -10,6 +10,11 @@
         },
         "sqlAdministratorLoginPassword": {
             "value": "GEN-PASSWORD"
+        },
+        "sparkVersion": {
+            "value": "3.4"
+            }
+
         }
     }
 }
