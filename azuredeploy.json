@@ -534,7 +534,7 @@
           "enabled": true,
           "delayInMinutes": 15
         },
-        "sparkVersion": "[parameters('sparkVersion')]"
+        "sparkVersion": "3.4"
 
       }
     },
