@@ -19,7 +19,7 @@
   "metadata": {
     "description": "Specify Spark version for the Spark pool."
   }
-}
+},
 
     "allowAllConnections": {
       "type": "string",
